@@ -1,0 +1,25 @@
+@import "tailwindcss";
+.font-dmsans {
+    font-family: "DM Sans", sans-serif;
+}
+.greenish{
+    background: #00DEC3;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.ashgray{
+    background: rgb(165, 165, 165);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.blue{
+    background: rgba(0, 128, 255, 1);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.border-color{
+    border: 1px solid rgba(31, 31, 31, 1)
+}
