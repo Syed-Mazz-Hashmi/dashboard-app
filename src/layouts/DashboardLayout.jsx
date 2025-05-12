@@ -3,7 +3,7 @@ import Navbar from '../compunents/Navbar'
 import { Outlet } from 'react-router-dom'
 // import Sidebar from '../compunents/sidebar'
 import Sidebar from '../compunents/Sidebar'
-import Header from '../compunents/header'
+import Header from '../compunents/Header'
 
 const DashboardLayout = () => {
     return (
