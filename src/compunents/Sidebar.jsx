@@ -18,11 +18,11 @@ const Sidebar = () => {
                         </Link>
                     </div>
                     <div>
-                        <Link to="/dashboard/user/listview">
+                        <Link to="/dashboard/user/UserList">
                             <img className=' size-8 ' src="/assets/user.png" alt="" />
                             <p className='ashgray'>User</p>
                         </Link>
-                    </div>
+                    </div> 
                     <div>
                         <Link to="/dashboard/location/contrylist">
                             <img className=' size-8 ml-3' src="/assets/location.png" alt="" />
