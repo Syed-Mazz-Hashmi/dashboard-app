@@ -2,13 +2,13 @@ import React from 'react'
 
 const ColumnsCharts = () => {
     return (
-        <div className='w-full border-1 ml-[5px] text-white  border-[#292929] rounded-xl p-3 '>
+        <div className='w-full border-1 ml-[5px] text-white  border-[#292929] rounded-xl p-3 pt-5'>
             <div>
                 <h1 className='text-white text-2xl font-bold'>
                     Recent Subscription
                 </h1>
             </div>
-            <div className="grid grid-cols-2 justify-between">
+            <div className="grid grid-cols-2 justify-between mt-10">
                 <div>
                     <div className='flex text-xs gap-1 mt-2'>
                         <div className='w-10 h-10 bg-[#292929] rounded-full border-2 border-[#00DEC3]'>
@@ -98,7 +98,7 @@ const ColumnsCharts = () => {
                             /month
                         </p>
                     </div>
-                    <div className='text-xs text-end mt-2'>
+                    <div className='text-xs text-end mt-4'>
                         <h1>
                             $ Amount of subscriptions
                         </h1>
@@ -106,7 +106,7 @@ const ColumnsCharts = () => {
                             /month
                         </p>
                     </div>
-                    <div className='text-xs text-end mt-2'>
+                    <div className='text-xs text-end mt-4'>
                         <h1>
                             $ Amount of subscriptions
                         </h1>
@@ -114,7 +114,7 @@ const ColumnsCharts = () => {
                             /month
                         </p>
                     </div>
-                    <div className='text-xs text-end mt-2'>
+                    <div className='text-xs text-end mt-4'>
                         <h1>
                             $ Amount of subscriptions
                         </h1>
@@ -122,7 +122,7 @@ const ColumnsCharts = () => {
                             /month
                         </p>
                     </div>
-                    <div className='text-xs text-end mt-2'>
+                    <div className='text-xs text-end mt-4'>
                         <h1>
                             $ Amount of subscriptions
                         </h1>
@@ -130,7 +130,7 @@ const ColumnsCharts = () => {
                             /month
                         </p>
                     </div>
-                    <div className='text-xs text-end mt-2'>
+                    <div className='text-xs text-end mt-4'>
                         <h1>
                             $ Amount of subscriptions
                         </h1>

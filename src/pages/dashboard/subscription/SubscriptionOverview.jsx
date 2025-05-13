@@ -12,14 +12,16 @@ const SubscriptionOverview = () => {
       <div>
         <div className='flex gap-3'>
           <div>
-            <h1 className='text-white text-2xl font-bold p-3'>
+            <h1 className='text-white text-xl font-bold p-3'>
               Overviwe
             </h1>
           </div>
-          <div className='text-white text-2xl font-bold p-3 '>
-          <Link to='/dashboard/subscription/subscriptionlist'><h1>
-          Recent Subscriptions
-            </h1></Link>
+          <div className='text-white text-xl font-bold p-3 '>
+          <Link to='/dashboard/subscription/subscriptionlist'>
+            <h1>
+               Recent Subscriptions
+            </h1>
+          </Link>
           </div>
         </div>
       </div>
