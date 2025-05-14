@@ -12,6 +12,7 @@ import Productlist from '../pages/dashboard/Product/Productlist';
 import Storage from '../pages/dashboard/Storage/Storage';
 import SubscriptionOverview from '../pages/dashboard/subscription/SubscriptionOverview';
 import RecentSubscriptions from '../pages/dashboard/subscription/RecentSubscriptions';
+import FilterTab from '../pages/dashboard/User/FilterTab';
 const Routers = () => {
     return (
         <Router>
@@ -26,6 +27,7 @@ const Routers = () => {
                     </Route>
                     <Route path='/dashboard/user' >
                         <Route path='/dashboard/user/UserList' element={<ListView />} />
+                        <Route path='/dashboard/user/FilterTab' element={<FilterTab />} />
                     </Route>
                     <Route path='/dashboard/location' >
                         <Route path='/dashboard/location/contrylist' element={<Contrylist />} />
