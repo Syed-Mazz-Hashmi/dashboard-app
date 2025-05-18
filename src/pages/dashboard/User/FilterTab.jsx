@@ -11,7 +11,7 @@ const FilterTab = () => {
                     <h1 className='text-white text-xl font-bold p-3'>
                         Filter Tabs
                     </h1>
-                </div>
+                </div> 
                 <div className='content-center'>
                     <ImCross  className='text-white '/>
                 </div>
