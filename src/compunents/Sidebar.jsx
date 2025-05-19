@@ -12,13 +12,13 @@ const Sidebar = () => {
                         </Link>
                     </div>
                     <div className=''>
-                        <Link to="/dashboard/subscription/SubscriptionOverview">
+                        <Link to="/dashboard/subscription/subscriptionoverview">
                             <img className=' size-8 ml-6 ' src="/assets/subscription.png" alt="" />
                             <p className='ashgray'>Subscription</p>
                         </Link>
                     </div>
                     <div>
-                        <Link to="/dashboard/user/UserList">
+                        <Link to="/dashboard/user/userlist">
                             <img className=' size-8 ' src="/assets/user.png" alt="" />
                             <p className='ashgray'>User</p>
                         </Link>

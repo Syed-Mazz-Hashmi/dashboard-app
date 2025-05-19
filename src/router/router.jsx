@@ -26,8 +26,8 @@ const Routers = () => {
                         <Route path='/dashboard/subscription/subscriptionlist' element={<RecentSubscriptions />} />
                     </Route>
                     <Route path='/dashboard/user' >
-                        <Route path='/dashboard/user/UserList' element={<ListView />} />
-                        <Route path='/dashboard/user/FilterTab' element={<FilterTab />} />
+                        <Route path='/dashboard/user/userlist' element={<ListView />} />
+                        <Route path='/dashboard/user/filterTab' element={<FilterTab />} />
                     </Route>
                     <Route path='/dashboard/location' >
                         <Route path='/dashboard/location/contrylist' element={<Contrylist />} />

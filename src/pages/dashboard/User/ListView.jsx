@@ -11,9 +11,6 @@ const ListView = () => {
     return (
         <>
             <div>
-                {/* <h1 className='text-white text-xl font-bold'>
-        UserList
-      </h1> */}
                 <div>
                     <div className=''>
                         <div>
@@ -22,14 +19,7 @@ const ListView = () => {
                                 UserList
                             </h1>
                             {/* </Link> */}
-                        </div>
-                        {/* <div className='text-white text-xl font-bold p-3 '>
-                      <Link to='/dashboard/subscription/subscriptionlist'>
-                        <h1>
-                           Recent Subscriptions
-                        </h1>
-                      </Link>
-                      </div> */}
+                        </div>  
                     </div>
                     <div className='border-1 ml-[5px] w-full border-[#292929] rounded-xl'>
                         <div className='border-1 rounded-xl p-3'>
@@ -55,7 +45,7 @@ const ListView = () => {
                                     <div className='content-center border-[1.5px]  border-[#0080FF] rounded-xl hover:bg-[#0080FF]'>
                                         <IoMenu className='w-10 h-10 p-1 text-[#0080FF] hover:text-white' />
                                     </div>
-                                    <Link to="/dashboard/user/FilterTab">
+                                    <Link to="/dashboard/user/filtertab">
                                     <div className='content-center border-[1.5px]  border-[#0080FF] rounded-xl hover:bg-[#0080FF]'>
                                         <BsFillMenuButtonWideFill className='w-10 p-2 h-10  text-[#0080FF] hover:text-white' />
                                     </div>
