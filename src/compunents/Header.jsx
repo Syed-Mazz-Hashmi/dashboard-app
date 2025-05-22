@@ -1,13 +1,18 @@
 import React from 'react';
 import logo from "/assets/headerlogo.png"
+import { CgAddR } from "react-icons/cg";
+import { CiSearch } from "react-icons/ci";
+import { FaRegBell } from "react-icons/fa";
+import { CgMenuGridR } from "react-icons/cg";
+import { RiSettings5Line } from "react-icons/ri";
 
 const Header = () => {
     return (
         <>
             <div className='container px-5 pt-4 border-color'>
-                <div className='container grid grid-cols-2 ' >
+                <div className=' grid grid-cols-2 ' >
                     {/*  right side header*/}
-                    <div className=' container flex gap-3 font-dmsans justify-start'>
+                    <div className='  flex  font-dmsans justify-start'>
                         <img src={logo} className='w-[30px] h-[40px]' alt="" />
                         <div className='flex gap-2 mt-1 ashgray text-2xl  '>
                             <h1 className='font-bold '>
@@ -26,21 +31,23 @@ const Header = () => {
                         </div>
                     </div>
                     {/* left side header  */}
-                    <div className='container flex flrx-wrap gap-8 justify-end'>
-                        <div className='border-2 rounded-lg border-[blue]'>
-                            <img src="/assets/plus.png" alt="" />
+                    <div className=' flex flex-wrap gap-8 justify-end'>
+                        <div>
+                            <CgAddR className='text-white size-8'/>
                         </div>
                         <div>
-                            <img src="/assets/search.png" alt="" />
+                            <CiSearch className='text-white size-8'/>
                         </div>
                         <div>
-                            <img src="/assets/bell.png" alt="" />
+                            <FaRegBell className='text-white size-8' />
                         </div>
                         <div>
-                            <img src="/assets/fe_app-menu.png" alt="" />
+                            <CgMenuGridR className='text-white size-8' />
+
                         </div>
                         <div>
-                            <img src="/assets/settings.png" alt="" />
+                            <RiSettings5Line className='text-white size-8' />
+
                         </div>
                         <div className='border-2 text-white rounded-full border-[blue]'>
                             <h1 className='text-3xl '>

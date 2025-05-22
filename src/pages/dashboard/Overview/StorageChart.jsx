@@ -1,10 +1,10 @@
 import React from "react";
 
 const data = [
-  { name: "Swiprr", size: 12.5, color: "bg-blue-600", icon: "🦁" },
-  { name: "Clikkle Ads", size: 5.0, color: "bg-green-500", icon: "📈" },
-  { name: "Kept Up", size: 2.8, color: "bg-yellow-400", icon: "📦" },
-  { name: "Hivrr", size: 2.2, color: "bg-red-500", icon: "🎯" },
+  { name: "Swiprr", size: 30.5, color: "bg-blue-600", icon: "🦁" },
+  { name: "Clikkle Ads", size: 15.0, color: "bg-green-500", icon: "📈" },
+  { name: "Kept Up", size: 10.8, color: "bg-yellow-400", icon: "📦" },
+  { name: "Hivrr", size: 6.2, color: "bg-red-500", icon: "🎯" },
 ];
 
 const totalUsed = data.reduce((sum, app) => sum + app.size, 0);
