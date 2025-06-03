@@ -13,6 +13,7 @@ import Storage from '../pages/dashboard/Storage/Storage';
 import SubscriptionOverview from '../pages/dashboard/subscription/SubscriptionOverview';
 import RecentSubscriptions from '../pages/dashboard/subscription/RecentSubscriptions';
 import FilterTab from '../pages/dashboard/User/FilterTab';
+import UserDetails from '../pages/dashboard/User/UserDetails';
 const Routers = () => {
     return (
         <Router>
@@ -28,6 +29,7 @@ const Routers = () => {
                     <Route path='/dashboard/user' >
                         <Route path='/dashboard/user/userlist' element={<ListView />} />
                         <Route path='/dashboard/user/filterTab' element={<FilterTab />} />
+                        <Route path='/dashboard/user/userdetails' element={<UserDetails />} />
                     </Route>
                     <Route path='/dashboard/location' >
                         <Route path='/dashboard/location/contrylist' element={<Contrylist />} />

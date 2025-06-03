@@ -4,6 +4,7 @@ import { IoMenu } from "react-icons/io5";
 import { BsFillMenuButtonWideFill } from "react-icons/bs";
 import { MdWindow } from "react-icons/md";
 import { Link } from 'react-router-dom';
+import UserHeader from './UserHeader';
 
 
 const ListView = () => {
@@ -22,40 +23,7 @@ const ListView = () => {
                         </div>  
                     </div>
                     <div className='border-1 ml-[5px] w-full border-[#292929] rounded-xl'>
-                        <div className='border-1 rounded-xl p-3'>
-                            <div className='grid grid0-row-2 lg:grid-cols-2 justify-between'>
-                                <div className='content-center'>
-                                    <h1 className='text-white text-4xl font-bold p-3'>
-                                        Userlist
-                                        <span className='ashgray text-xs ml-3'>
-                                            Row per page : 10
-                                        </span>
-                                    </h1>
-                                </div>
-                                <div className='flex flex-wrap justify-end my-3 gap-2 '>
-                                    <div className='flex'>
-                                        <input className='bg-[#1A1A1A] border border-[#292929] rounded-xl p-2 text-white w-50' type="text" placeholder='Search User' />
-                                        <CiSearch className='text-white text-2xl  mt-2  ml-[-30px]' />
-                                    </div>
-                                    <div>
-                                        <button className='bg-[#0080FF] text-white rounded-xl p-2 ml-2 w-20'>
-                                            Export
-                                        </button>
-                                    </div>
-                                    <div className='content-center border-[1.5px]  border-[#0080FF] rounded-xl hover:bg-[#0080FF]'>
-                                        <IoMenu className='w-10 h-10 p-1 text-[#0080FF] hover:text-white' />
-                                    </div>
-                                    <Link to="/dashboard/user/filtertab">
-                                    <div className='content-center border-[1.5px]  border-[#0080FF] rounded-xl hover:bg-[#0080FF]'>
-                                        <BsFillMenuButtonWideFill className='w-10 p-2 h-10  text-[#0080FF] hover:text-white' />
-                                    </div>
-                                    </Link>
-                                    <div className='content-center border-[1.5px]  border-[#0080FF] rounded-xl hover:bg-[#0080FF]'>
-                                        <MdWindow className='w-10 h-8  text-[#0080FF] hover:text-white' />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <UserHeader/>
                         <div className='border-1 border-[#414141] rounded-xl text- mx-3'>
                             <div className='grid grid-cols-9 bg-[#302f2f] mx-3 mt-2 p-3 justify-between rounded-lg'>
                                 <div className='text-center text-white font-bold py-2 text-xs'>Clients</div>
