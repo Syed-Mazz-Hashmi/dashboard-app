@@ -19,6 +19,7 @@
     "@mui/material": "^7.1.0",
     "@mui/x-charts": "^8.2.0",
     "@mui/x-charts-pro": "^8.2.0",
+    "@reactour/tour": "^3.8.0",
     "@tailwindcss/vite": "^4.1.6",
     "apex-grid": "^1.0.1",
     "apexcharts": "^4.7.0",

@@ -32,11 +32,13 @@ const UserHeader = () => {
                             </button>
                         </div>
                         <div className='content-center border-[1.5px]  border-[#0080FF] rounded-xl hover:bg-[#0080FF]'>
-                            <IoMenu className='w-10 h-10 p-1 text-[#0080FF] hover:text-white' />
+                            <IoMenu onClick={() => setOpen(true)} className='w-10 h-10 p-1 text-[#0080FF] hover:text-white' />
                         </div>
+                        <Link to={'/dashboard/user/userlist'}>
                         <div className='content-center border-[1.5px]  border-[#0080FF] rounded-xl hover:bg-[#0080FF]'>
-                            <BsFillMenuButtonWideFill onClick={() => setOpen(true)} className='w-10 p-2 h-10  text-[#0080FF] hover:text-white' />
+                            <BsFillMenuButtonWideFill  className='w-10 p-2 h-10  text-[#0080FF] hover:text-white' />
                         </div>
+                        </Link>
                         {open && (
                             <div className=" absolute z-50 w-[100%] top-15 md:right-15 " style={{ justifyItems: "end", }}>
                                 <div className='items-end w-[90%] md:w-[30%] border-1 rounded-xl border-[#232323] bg-[#141414]'>
