@@ -14,6 +14,7 @@ import SubscriptionOverview from '../pages/dashboard/subscription/SubscriptionOv
 import RecentSubscriptions from '../pages/dashboard/subscription/RecentSubscriptions';
 import FilterTab from '../pages/dashboard/User/FilterTab';
 import UserDetails from '../pages/dashboard/User/UserDetails';
+import UserProfile from '../pages/dashboard/User/UserProfile';
 const Routers = () => {
     return (
         <Router>
@@ -30,6 +31,7 @@ const Routers = () => {
                         <Route path='/dashboard/user/userlist' element={<ListView />} />
                         <Route path='/dashboard/user/filterTab' element={<FilterTab />} />
                         <Route path='/dashboard/user/userdetails' element={<UserDetails />} />
+                        <Route path='/dashboard/user/userprofile' element={<UserProfile />} />
                     </Route>
                     <Route path='/dashboard/location' >
                         <Route path='/dashboard/location/contrylist' element={<Contrylist />} />
