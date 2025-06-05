@@ -26,12 +26,11 @@ const UserHeader = () => {
                             <input className='bg-[#1A1A1A] border border-[#292929] rounded-xl p-2 text-white w-50' type="text" placeholder='Search User' />
                             <CiSearch className='text-white text-2xl  mt-2  ml-[-30px]' />
                         </div>
-                        <Link to={'/dashboard/user/userprofile'}>
                         <div>
                             <button className='bg-[#0080FF] text-white rounded-xl p-2 ml-2 w-20'>
                                 Export
                             </button>
-                        </div></Link>
+                        </div>
                         <div className='content-center border-[1.5px]  border-[#0080FF] rounded-xl hover:bg-[#0080FF]'>
                             <IoMenu onClick={() => setOpen(true)} className='w-10 h-10 p-1 text-[#0080FF] hover:text-white' />
                         </div>

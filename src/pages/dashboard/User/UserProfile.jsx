@@ -9,6 +9,130 @@ const subscriptions = [
   { name: 'Clikkle Files', usage: '2.40 GB Used' },
 ];
 
+const usercards = [
+  // Add more user objects here as needed
+  {
+    username: "Emma Stone",
+    useremail: "emmastone@clikkmail.com",
+    usercountry: "England",
+    userip: "237.84.2.178",
+    userdevice: "IOS",
+    date: "01/01/2023",
+    status: "Disabled",
+    totalsubscription: "20",
+  },
+  {
+    username: "Darnell Walsh",
+    useremail: "darnellwalsh2@clikkmail.com",
+    usercountry: "Germany",
+    userip: "192.255.1.38",
+    userdevice: "IOS",
+    date: "11 - 12 - 2019",
+    status: "Active",
+    totalsubscription: "20",
+  },
+  {
+    username: "Jason Hack",
+    useremail: "jasonhack@clikkmail.com",
+    usercountry: "France",
+    userip: "192.168.1.44",
+    userdevice: "Android Tablet",
+    date: "02 - 05 - 2021",
+    status: "Active",
+    totalsubscription: "20",
+  },
+  {
+    username: "Ted Bobby",
+    useremail: "tedbobby@clikkmail.com",
+    usercountry: "United States",
+    userip: "192.168.1.30",
+    userdevice: "Laptop",
+    date: "06 - 02 - 2020",
+    status: "Acctive",
+    totalsubscription: "20",
+  },
+  {
+    username: "Amina Hira",
+    useremail: "aminahira@clikkmail.com",
+    usercountry: "England",
+    userip: "192.188.1.35",
+    userdevice: "IOS",
+    date: "19 - 04 - 2019",
+    status: "Disabled",
+    totalsubscription: "20",
+  },
+  {
+    username: "Nathan Percy",
+    useremail: "nathanpercy@clikkmail.com",
+    usercountry: "France",
+    userip: "192.168.1.33",
+    userdevice: "IOS",
+    date: "14 - 08 - 2018",
+    status: "Disabled",
+    totalsubscription: "20",
+  },
+  {
+    username: "Adam Franklin",
+    useremail: "adamfranklin@clikkmail.comm",
+    usercountry: "Canada",
+    userip: "192.255.1.63 ",
+    userdevice: "IOS",
+    date: "11 - 03 - 2022",
+    status: "Active",
+    totalsubscription: "20",
+  },
+  {
+    username: "Jessica Stewart",
+    useremail: "jessicastewart@clikkmail.com",
+    usercountry: "Canada",
+    userip: "192.168.1.78",
+    userdevice: "IOS",
+    date: "16 - 01 - 2020",
+    status: "Active",
+    totalsubscription: "20",
+  },
+  {
+    username: "Emma Stone",
+    useremail: "emmastone@clikkmail.com",
+    usercountry: "England",
+    userip: "237.84.2.178",
+    userdevice: "IOS",
+    date: "01/01/2023",
+    status: "Disabled",
+    totalsubscription: "20",
+  },
+  {
+    username: "Emma Stone",
+    useremail: "emmastone@clikkmail.com",
+    usercountry: "England",
+    userip: "237.84.2.178",
+    userdevice: "IOS",
+    date: "01/01/2023",
+    status: "Disabled",
+    totalsubscription: "20",
+  },
+  {
+    username: "Emma Stone",
+    useremail: "emmastone@clikkmail.com",
+    usercountry: "England",
+    userip: "237.84.2.178",
+    userdevice: "IOS",
+    date: "01/01/2023",
+    status: "Disabled",
+    totalsubscription: "20",
+  },
+  {
+    username: "Emma Stone",
+    useremail: "emmastone@clikkmail.com",
+    usercountry: "England",
+    userip: "237.84.2.178",
+    userdevice: "Android",
+    date: "01/01/2023",
+    status: "Disabled",
+    totalsubscription: "20",
+  },
+]
+
 function ActionMenu() {
   const [open, setOpen] = useState(false);
 
@@ -41,27 +165,27 @@ function ActionMenu() {
 
 export default function UserProfile() {
   return (
-    <div className="bg-black min-h-screen text-white p-4 md:p-6 font-sans">
+    <div className="bg-black min-h-screen text-white  font-sans">
       <h1 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">User Profile</h1>
 
       {/* User Info */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 bg-[#121212] p-4 rounded-lg mb-6">
-        <div>
-          <p>Email :</p>
+      <div className="grid grid-cols-1 md:grid-cols-3 font-bold gap-4  bg-[#121212] p-4 rounded-lg mb-6">
+        <div >
+          <p className='text-[#838383]'>Email :</p>
           <p className="text-blue-400 break-all">danielsillivan@clikkmail.com</p>
-          <p>Date of Birth:</p>
+          <p className='text-[#838383]'>Date of Birth :</p>
           <p> 27/03/1990</p>
         </div>
         <div>
-          <p>Phone Number :</p>
+          <p className='text-[#838383]'>Phone Number :</p>
           <p className="text-blue-400">(229) 655 0109</p>
-          <p>Country :</p>
+          <p className='text-[#838383]'>Country :</p>
           <p> United States</p>
         </div>
         <div className="md:text-left">
-          <p>IP Address : </p>
+          <p className='text-[#838383]'>IP Address : </p>
           <p>192.168.66455</p>
-          <p>Home Address : </p>
+          <p className='text-[#838383]'>Home Address : </p>
           <p className="break-all">6301 Elgin St. Celina, Delaware, 10299</p>
         </div>
       </div>
@@ -126,3 +250,10 @@ export default function UserProfile() {
     </div>
   );
 }
+//  <p className="text-lg font-semibold">Darnell Walsh</p>
+//           <p className="text-sm">QA Tester</p>
+//           <p className="text-green-500 font-semibold">Active</p>
+//           <p>Registration Date: 15/02/22</p>
+//           <p>Subscriptions: 12</p>
+//           <p><span className="text-yellow-400">11.25 GB</span> / <span className="text-white">100 GB</span></p>
+        

@@ -33,7 +33,7 @@ const Sidebar = () => {
                         </Link>
                     </div> 
                     <div>
-                        <Link to="/dashboard/location/contrylist">
+                        <Link to="/dashboard/location/location-overview">
                             <MdLocationOn className='text-white size-8 ml-3 '/>
                             <p className='ashgray'>Location</p>
                         </Link>

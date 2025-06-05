@@ -15,6 +15,7 @@ import RecentSubscriptions from '../pages/dashboard/subscription/RecentSubscript
 import FilterTab from '../pages/dashboard/User/FilterTab';
 import UserDetails from '../pages/dashboard/User/UserDetails';
 import UserProfile from '../pages/dashboard/User/UserProfile';
+import LocationOverview from '../pages/dashboard/Locations/LocationOverview';
 const Routers = () => {
     return (
         <Router>
@@ -34,6 +35,7 @@ const Routers = () => {
                         <Route path='/dashboard/user/userprofile' element={<UserProfile />} />
                     </Route>
                     <Route path='/dashboard/location' >
+                        <Route path='/dashboard/location/location-overview' element={<LocationOverview />} />
                         <Route path='/dashboard/location/contrylist' element={<Contrylist />} />
                     </Route>
                     {/* <Route path='/dashboard/Translation/' >

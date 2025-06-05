@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import UserHeader from './UserHeader'
+import UserProfile from './UserProfile'
 
 const usercards = [
   // Add more user objects here as needed
@@ -92,40 +93,27 @@ const usercards = [
     date: "01/01/2023",
     status: "Disabled",
     totalsubscription: "20",
-  },
-  {
-    username: "Emma Stone",
-    useremail: "emmastone@clikkmail.com",
-    usercountry: "England",
-    userip: "237.84.2.178",
-    userdevice: "IOS",
-    date: "01/01/2023",
-    status: "Disabled",
-    totalsubscription: "20",
-  },
-  {
-    username: "Emma Stone",
-    useremail: "emmastone@clikkmail.com",
-    usercountry: "England",
-    userip: "237.84.2.178",
-    userdevice: "IOS",
-    date: "01/01/2023",
-    status: "Disabled",
-    totalsubscription: "20",
-  },
-  {
-    username: "Emma Stone",
-    useremail: "emmastone@clikkmail.com",
-    usercountry: "England",
-    userip: "237.84.2.178",
-    userdevice: "Android",
-    date: "01/01/2023",
-    status: "Disabled",
-    totalsubscription: "20",
-  },
+  }
 ]
 
 const UserDetails = () => {
+  const [selectedUser, setSelectedUser] = useState(null);
+
+  // If a card is clicked, show the UserProfile page and hide the cards
+  if (selectedUser) {
+    return (
+      <div className="bg-black min-h-screen text-white p-4  font-sans">
+        <button
+          className="mb-4 right-8 px-4 py-2 absolute bg-red-600 rounded text-white"
+          onClick={() => setSelectedUser(null)}
+        >
+          Back
+        </button>
+        <UserProfile user={selectedUser} />
+      </div>
+    );
+  }
+
   return (
     <>
       <div className='border-1 ml-[5px] w-full border-[#292929] rounded-xl my-5'>
@@ -133,7 +121,7 @@ const UserDetails = () => {
         <div>
           <div className="grid grid-cols-1 md:grid-cols-3 p-4 md:px-2 gap-3">
             {usercards.map((user, idx) => (
-              <div key={idx}>
+              <div key={idx} onClick={() => setSelectedUser(user)} className="cursor-pointer">
                 <div className="max-w-md w-full bg-zinc-900 text-white rounded-xl p-5 shadow-md relative">
                   {/* Profile and status */}
                   <div className="flex justify-between items-start">
@@ -152,7 +140,6 @@ const UserDetails = () => {
                       {user.status}
                     </span>
                   </div>
-
                   {/* Location, IP, OS */}
                   <div className="flex justify-between items-center mt-6 text-sm">
                     <div className="flex items-center gap-2">
@@ -166,7 +153,6 @@ const UserDetails = () => {
                     <span className="text-zinc-400">{user.userip}</span>
                     <span className="text-white">{user.userdevice}</span>
                   </div>
-
                   {/* Date */}
                   <div className="flex items-center gap-2 mt-4 text-white">
                     <svg
@@ -185,7 +171,6 @@ const UserDetails = () => {
                     </svg>
                     <span>{user.date}</span>
                   </div>
-
                   {/* Icons row */}
                   <div className="flex items-center gap-2 mt-4">
                     <img src="/icons/slack.svg" alt="Slack" className="w-5 h-5" />
@@ -194,7 +179,6 @@ const UserDetails = () => {
                     <img src="/icons/docs.svg" alt="Docs" className="w-5 h-5" />
                     <span className="text-sm text-zinc-400">+15</span>
                   </div>
-
                   {/* Progress Bar */}
                   <div className="mt-6">
                     <div className="flex justify-between text-xs text-zinc-400">
@@ -207,7 +191,6 @@ const UserDetails = () => {
                       ></div>
                     </div>
                   </div>
-
                   {/* Total Subscriptions */}
                   <div className="flex justify-between items-center text-sm mt-2 text-zinc-400">
                     <span>Total Subscriptions</span>
